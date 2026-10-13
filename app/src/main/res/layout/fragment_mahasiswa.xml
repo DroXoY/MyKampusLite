@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Form Input Mahasiswa -->
+    <EditText android:id="@+id/etNama"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama (Min 3 Karakter)" />
+    <EditText android:id="@+id/etEmail"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress" />
+    <EditText android:id="@+id/etNim"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="NIM (Wajib 10 Digit Angka)" android:inputType="number" />
+    <EditText android:id="@+id/etJurusan"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Jurusan" />
+    <EditText android:id="@+id/etIpk"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="IPK (0.0 - 4.0)" android:inputType="numberDecimal" />
+
+    <!-- Tombol Simpan -->
+    <Button android:id="@+id/btnSimpan"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Simpan Mahasiswa" android:layout_marginTop="8dp"/>
+
+    <!-- Daftar Data (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
